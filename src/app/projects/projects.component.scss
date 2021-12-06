@@ -1,0 +1,75 @@
+$primary-color: #0F1A70;
+$secondary-color: #ffffff;
+$tertiary-color: #040806;
+$accent-color: #85E4F8;
+
+#projects {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    height: 100%;
+    background-color: $secondary-color;
+    display: inline;
+    overflow: hidden;
+}
+
+.project-card {
+    position: relative;
+    display: inline-block;
+    width: 33%;
+    height: 100%;
+}
+
+.project-card:hover a > img {
+    opacity: 0.2;
+}
+
+.project-card:hover a > p {
+    opacity: 1;
+    color: $tertiary-color;
+}
+
+.project-description {
+    position: absolute;
+    top: 25%;
+    opacity: 0;
+    font-size: 20px;
+    margin: 0 10%;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#forward, #back {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+#forward {
+    z-index: 10;
+    right: 20px;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    color: grey;
+}
+
+#back {
+    z-index: 10;
+    visibility: hidden;
+    left: 10px;
+    top: 50%;
+    cursor: pointer;
+    color: grey;
+}
+
+#forward:hover, #back:hover {
+    color: $accent-color;
+}
+
