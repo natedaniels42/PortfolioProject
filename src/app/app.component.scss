@@ -1,0 +1,72 @@
+
+$primary-color: #0F1A70;
+$secondary-color: #ffffff;
+$tertiary-color: #040806;
+$accent-color: #85E4F8;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('https://i.pinimg.com/originals/17/82/23/178223c0e273b8cc233ab4830c33c90f.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    animation: animation 1000s linear infinite;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    z-index: 10;
+}
+
+#nav-links {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    visibility: visible;
+}
+
+.nav-button {
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+    padding: 5px;
+    transition: all .5s ease-in-out;
+    border-radius: 20px;
+}
+
+li:hover {
+    color: $primary-color;
+    background-color: $secondary-color;
+}
+
+li:hover a {
+    color: $primary-color;
+}
+
+a {
+    text-decoration: none;
+    color: $secondary-color;
+    font-size: 20px;
+}
+
+#hamburger {
+    visibility: hidden;
+    color: $secondary-color;
+}
+
+#hamburger:hover {
+    color: $accent-color;
+}
+
