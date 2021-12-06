@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-projects',
@@ -7,8 +7,10 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
   index: number = 1; 
-  backDisplay: string = 'none;';
-  forwardDisplay: string = 'contents;';
+  backDisplay: string = 'none';
+  forwardDisplay: string = 'flex';
+  projectDisplay: string[] = ['inline-block', 'inline-block', 'inline-block', 'none', 'none'];
+
   constructor() { }
   
   showData($event: any){ 
@@ -17,25 +19,36 @@ export class ProjectsComponent implements OnInit {
     } 
   } 
 
+  updateProjectCards() {
+    this.projectDisplay = this.projectDisplay.map((project, i) => i >= this.index - 1 && i <= this.index + 1 ? 'inline-block' : 'none');
+  }
+
   increment($event: any) {
     console.log($event.target);
-    if (this.index < 4) {
+    if (this.index === 1) {
+      this.backDisplay = 'flex';
+    }
+    if (this.index < 3) {
       this.index++;
       console.log(this.index);
-      if (this.index === 4) {
-        console.log('four');
-        $event.target.style.display = 'none';
+      if (this.index === 3) {
+        this.forwardDisplay = 'none';
       }
+      this.updateProjectCards();
     }
   }
 
   decrement($event: any) {
+    if (this.index === 3) {
+      this.forwardDisplay = 'flex';
+    }
     if (this.index > 1) {
       this.index--;
       console.log(this.index);
       if (this.index === 1) {
-        $event.target.style.display = 'none';
+        this.backDisplay = 'none';
       }
+      this.updateProjectCards();
     }
   }
 
