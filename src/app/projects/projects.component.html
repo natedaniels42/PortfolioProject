@@ -1,24 +1,51 @@
 <section id="projects">
-    <div id="forward"><i class="fas fa-arrow-circle-right fa-3x"></i></div>
-    <div id="back"><i class="fas fa-arrow-circle-left fa-3x"></i></div>
+    <div id="forward" (click)="increment()"><i class="fas fa-arrow-circle-right fa-3x"></i></div>
+    <div #back id="back" (click)="decrement()"><i class="fas fa-arrow-circle-left fa-3x"></i></div>
     <div class="project-card" id="card1">
         <a href="https://bassoon-finger-trainer-client.herokuapp.com/" target="_blank"><img src="../assets/images/bassoon-img.jpeg" alt="colorful food">
-        <p class="project-description"><strong>Key Masters</strong> is a bassoon fingering trainer for students.  Choose the difficulty or range you would like to do and then fill in the keys to submit your answers.  If you are stumped on the fingerings refer to the fingering chart for guidance.  Built with React with an Express backend and MongoDB</p></a>
+            <p class="project-description"><strong>Key Masters</strong> is a bassoon fingering trainer for students.  Choose the difficulty or range you would like to do and then fill in the keys to submit your answers.  If you are stumped on the fingerings refer to the fingering chart for guidance.  Built with React with an Express backend and MongoDB</p>
+            <div class="buttons">
+                <a href="https://bassoon-finger-trainer-client.herokuapp.com/" target="_blank" class="website">Website</a>
+                <a href="https://github.com/natedaniels42/bassoon-finger-trainer-client" target="_blank" class="client">Front End</a>
+                <a href="https://github.com/natedaniels42/bassoon-finger-trainer-api" target="_blank" class="api">API</a>
+            </div>
+        </a>
     </div>
     <div class="project-card" id="card2">
         <a href="https://movable-do.herokuapp.com/" target="_blank"><img src="../assets/images/solfege-circle.jpeg" alt="colorful food">
-        <p class="project-description"><strong>Movable D&#333;</strong> Choose which note you want to set as your "d&#333;" and then choose your scale type (major, natural minor, harmonic minor, melodic minor) to set your solfege syllables, then click the buttons to hear the notes for each syllable.  Built using React</p></a>
+            <p class="project-description"><strong>Movable D&#333;</strong> Choose which note you want to set as your "d&#333;" and then choose your scale type (major, natural minor, harmonic minor, melodic minor) to set your solfege syllables, then click the buttons to hear the notes for each syllable.  Built using React</p>
+            <div class="buttons">
+                <a href="https://movable-do.herokuapp.com/" target="_blank" class="website">Website</a>
+                <a href="https://github.com/natedaniels42/movable-do" target="_blank" class="client">Code</a>
+            </div>
+        </a>
     </div>
     <div class="project-card" id="card3">
         <a href="https://macro-meals42.herokuapp.com/" target="_blank"><img src="../assets/images/food.jpg" alt="colorful food">
-        <p class="project-description"><strong>Macro Meals</strong> allows the user to search for healthy food options using custom macronutrient filters.  Choose the amount of fat, carbs, and protein you need or just browse through all the meal options.  Built using React with an Express backend and MongoDB</p></a>
+            <p class="project-description"><strong>Macro Meals</strong> allows the user to search for healthy food options using custom macronutrient filters.  Choose the amount of fat, carbs, and protein you need or just browse through all the meal options.  Built using React with an Express backend and MongoDB</p>
+            <div class="buttons">
+                <a href="https://macro-meals42.herokuapp.com/" target="_blank" class="website">Website</a>
+                <a href="https://github.com/natedaniels42/macro-meals-client" target="_blank" class="client">Front End</a>
+                <a href="https://github.com/natedaniels42/macro-meals-api" target="_blank" class="api">API</a>
+            </div>
+        </a>
     </div>
     <div class="project-card" id="card4">
         <a href="https://wayfarer-42.herokuapp.com/" target="_blank"><img src="../assets/images/London1.jpeg" alt="London">
-        <p class="project-description"><strong>Wayfarer</strong> is a travel blog allowing the users to set up an account and share their thoughts on a variety of exciting destinations.  Built using Python and Django.  This was a collaboration of 3 developers</p></a>
+            <p class="project-description"><strong>Wayfarer</strong> is a travel blog allowing the users to set up an account and share their thoughts on a variety of exciting destinations.  Built using Python and Django.  This was a collaboration of 3 developers</p>    
+            <div class="buttons">
+                <a href="https://wayfarer-42.herokuapp.com/" target="_blank" class="website">Website</a>
+                <a href="https://github.com/natedaniels42/wayfarer" target="_blank" class="client">Front End</a>
+            </div>
+        </a>
     </div>
     <div class="project-card" id="card5">
         <a href="https://protected-citadel-11690.herokuapp.com/" target="_blank"><img src="../assets/images/petplaces.jpg" alt="Pets4U logo">
-        <p class="project-description"><strong>Pets4U</strong> is a site designed to inform users of pets available for adoption in their area.  Pets can be searched by location and new pets can be added to the site.  If you decide to adopt a pet, an email confirmation will be sent to you (note: nodemailer is disabled for the deployed site at this time).  This was a collaboration with another developer and it is built using Express and MongoDB</p></a>
+            <p class="project-description"><strong>Pets4U</strong> is a site designed to inform users of pets available for adoption in their area.  Pets can be searched by location and new pets can be added to the site.  If you decide to adopt a pet, an email confirmation will be sent to you (note: nodemailer is disabled for the deployed site at this time).  This was a collaboration with another developer and it is built using Express and MongoDB</p>    
+            <div class="buttons">
+                <a href="https://protected-citadel-11690.herokuapp.com/" target="_blank" class="website">Website</a>
+                <a href="https://github.com/natedaniels42/pets4u" target="_blank" class="client">Front End</a>
+            </div>
+        </a>
     </div>
 </section>
