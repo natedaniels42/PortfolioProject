@@ -1,6 +1,6 @@
 <section id="projects">
-    <div id="forward" (click)="increment()"><i class="fas fa-arrow-circle-right fa-3x"></i></div>
-    <div #back id="back" (click)="decrement()"><i class="fas fa-arrow-circle-left fa-3x"></i></div>
+    <div id="forward" (click)="increment($event)"><i class="fas fa-arrow-circle-right fa-3x"></i></div>
+    <div #back id="back" (click)="decrement($event)"><i class="fas fa-arrow-circle-left fa-3x"></i></div>
     <div class="project-card" id="card1">
         <a href="https://bassoon-finger-trainer-client.herokuapp.com/" target="_blank"><img src="../assets/images/bassoon-img.jpeg" alt="colorful food">
             <p class="project-description"><strong>Key Masters</strong> is a bassoon fingering trainer for students.  Choose the difficulty or range you would like to do and then fill in the keys to submit your answers.  If you are stumped on the fingerings refer to the fingering chart for guidance.  Built with React with an Express backend and MongoDB</p>

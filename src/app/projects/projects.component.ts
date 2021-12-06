@@ -6,21 +6,36 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-  index: number = 1;
-  
+  index: number = 1; 
+  backDisplay: string = 'none;';
+  forwardDisplay: string = 'contents;';
   constructor() { }
   
-  increment() {
+  showData($event: any){ 
+    console.log("button is clicked!"); if($event) { 
+       console.log($event.target); 
+    } 
+  } 
+
+  increment($event: any) {
+    console.log($event.target);
     if (this.index < 4) {
       this.index++;
       console.log(this.index);
+      if (this.index === 4) {
+        console.log('four');
+        $event.target.style.display = 'none';
+      }
     }
   }
 
-  decrement() {
+  decrement($event: any) {
     if (this.index > 1) {
       this.index--;
       console.log(this.index);
+      if (this.index === 1) {
+        $event.target.style.display = 'none';
+      }
     }
   }
 

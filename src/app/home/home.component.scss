@@ -199,6 +199,44 @@ main {
     animation: shoot 20s;
 }
 
+#ufo {
+    position: absolute;
+    top: 100px;
+    width: 20px;
+    animation: fly 40s linear infinite;
+}
+
+@keyframes fly {
+    0% {
+        left: -20%;
+        top: 10%;
+    }
+    10% {
+        left: 5%;
+        top: 8%;
+    }
+    30% {
+        left: 18%;
+        top: 12%;
+    }
+    50% {
+        left: 35%;
+        top: 22%;
+    }
+    70% {
+        left: 73%;
+        top: 52%;
+    }
+    90% {
+        left: 81%;
+        top: 65%;
+    }
+    100% {
+        left: 120%;
+        top: -120%;
+    }
+}
+
 @keyframes twinkle {
     0% {
         opacity: 0;
