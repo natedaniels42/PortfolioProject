@@ -1,3 +1,8 @@
+$primary-color: #0F1A70;
+$secondary-color: #ffffff;
+$tertiary-color: #040806;
+$accent-color: #85E4F8;
+
 #tech {
     position: absolute;
     width: 100%;
@@ -27,9 +32,22 @@
     width: 100%;
     justify-content: center;
     cursor: pointer;
+    padding: 20px;
+    border-radius: 10%;
+}
+
+.logo:hover {
+    border: 1px solid $secondary-color;
+    background-color: #ddd;
+    opacity: .8;
 }
 
 .logo img {
     justify-content: center;
     align-items: center;
+}
+
+#hovered-tech {
+    margin-top: 20px;
+    color: white;
 }

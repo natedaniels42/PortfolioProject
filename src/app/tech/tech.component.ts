@@ -6,8 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tech.component.scss']
 })
 export class TechComponent implements OnInit {
-
+  techText: string = '';
   constructor() { }
+
+  setText($event: any) {
+    this.techText = $event.target.id;
+  }
 
   ngOnInit(): void {
   }
