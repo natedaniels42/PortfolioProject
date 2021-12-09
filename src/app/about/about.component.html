@@ -1,8 +1,8 @@
 <section id="about">
     <div id="sample-images">
-        <img src="../assets/images/nate-outdoors.jpg" id="sample-image1" alt="man with wife outdoors">
-        <img src="../assets/images/nate-bassoon.jpg" id="sample-image2" alt="man playing bassoon">
-        <img src="../assets/images/alfine-tongue.jpg" id="sample-image3" alt="dog with tongue out">
+        <img src="../assets/images/nate-outdoors.jpg" (click)="setSource($event)" id="sample-image1" alt="man with wife outdoors">
+        <img src="../assets/images/nate-bassoon.jpg" (click)="setSource($event)" id="sample-image2" alt="man playing bassoon">
+        <img src="../assets/images/alfine-tongue.jpg" (click)="setSource($event)" id="sample-image3" alt="dog with tongue out">
     </div>
     <div id="about-inner">
         <div id="background-box"></div>
@@ -12,7 +12,7 @@
             <p>In my free time I enjoy playing and arranging music.  I also enjoy spending time with my wife, Jennifer, and my dog, Alfine.</p><br>
             <p>If you would like more information about me check out my resume <a href="./images/Nathan_Daniels_Resume.pdf" target="_blank" id="here">here</a></p>
         </div>
-        <div id="about-box">
+        <div id="about-box" *ngIf="view" [style.background-image]="'url(' + source + ')'">
         </div>
     </div>
 </section>
