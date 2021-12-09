@@ -15,7 +15,7 @@ export class ProjectsComponent implements OnInit {
   constructor() { }
   
   onResize(event: Event) {
-    if ((event.target as Window).innerWidth < 800) {
+    if ((event.target as Window).innerWidth <= 800) {
       this.mobile = true;
     } else {
       this.mobile = false;

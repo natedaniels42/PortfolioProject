@@ -1,8 +1,8 @@
-<body>
+<body (window:resize)="onResize($event)">
 
   <header>
     <nav id="nav">
-        <ul id="nav-links">
+        <ul id="nav-links" *ngIf="display || !mobile">
             <li class="nav-button" id="home-button">
                 <a href="">Home</a>
             </li>
@@ -22,7 +22,7 @@
                 <a href="contact">Contact Me</a>
             </li>
         </ul>
-        <i class="fas fa-ellipsis-h fa-2x" id="hamburger"></i>
+        <i class="fas fa-ellipsis-h fa-2x" id="hamburger" (click)="hamburger()"></i>
     </nav>
   </header>
   <div class="container">
