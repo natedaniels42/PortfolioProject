@@ -77,3 +77,18 @@ a {
     color: $accent-color;
 }
 
+@media screen and (max-width: 800px) {
+    #hamburger {
+        visibility: visible;
+    }
+
+    #nav-links {
+        visibility: hidden;
+        position: absolute;
+        top: 60px;
+        display: block;  
+        background-color: var(--primary-color);
+        opacity: .9;
+        width: 40%;
+    }
+}

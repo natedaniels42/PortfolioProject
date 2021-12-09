@@ -10,8 +10,17 @@ export class ProjectsComponent implements OnInit {
   backDisplay: string = 'none';
   forwardDisplay: string = 'flex';
   projectDisplay: string[] = ['inline-block', 'inline-block', 'inline-block', 'none', 'none'];
-
+  mobile: boolean = false;
+  
   constructor() { }
+  
+  onResize(event: Event) {
+    if ((event.target as Window).innerWidth < 800) {
+      this.mobile = true;
+    } else {
+      this.mobile = false;
+    }
+  }
   
   showData($event: any){ 
     console.log("button is clicked!"); if($event) { 
@@ -19,36 +28,17 @@ export class ProjectsComponent implements OnInit {
     } 
   } 
 
-  updateProjectCards() {
-    this.projectDisplay = this.projectDisplay.map((project, i) => i >= this.index - 1 && i <= this.index + 1 ? 'inline-block' : 'none');
-  }
-
   increment($event: any) {
-    console.log($event.target);
-    if (this.index === 1) {
-      this.backDisplay = 'flex';
-    }
     if (this.index < 3) {
       this.index++;
       console.log(this.index);
-      if (this.index === 3) {
-        this.forwardDisplay = 'none';
-      }
-      this.updateProjectCards();
     }
   }
 
   decrement($event: any) {
-    if (this.index === 3) {
-      this.forwardDisplay = 'flex';
-    }
     if (this.index > 1) {
       this.index--;
       console.log(this.index);
-      if (this.index === 1) {
-        this.backDisplay = 'none';
-      }
-      this.updateProjectCards();
     }
   }
 

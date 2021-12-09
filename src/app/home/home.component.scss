@@ -231,21 +231,25 @@ span {
         position: absolute;
         left: 35%;
         top: 24%;
+        transform: scale(.5);
     }
     70% {
         position: absolute;
         left: 73%;
         top: 53%;
+        transform: scale(1.0);
     }
     90% {
         position: absolute;
         left: 81%;
         top: 67%;
+        transform: scale(1.5);
     }
     100% {
         position: absolute;
         left: 120%;
         top: -118%;
+        transform: scale(.1);
     }
 }
 
@@ -259,22 +263,18 @@ span {
         top: 47%;
         transform: scale(2.0);
     }
-    15% {
-        left: 32%;
-        top: 46%;
-    }
     20% {
         left: 32%;
-        top: 47%;
+        top: 46%;
     }
     25% {
         left: 32%;
-        top: 46%;
+        top: 47%;
     }
     30% {
         left: 32%;
-        top: 47%;
-        transform: scale(2.0);
+        top: 46%;
+        transform: scale(2.0)
     }
     50% {
         left: 35%;
