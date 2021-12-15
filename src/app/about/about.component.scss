@@ -117,3 +117,17 @@ $accent-color: #85E4F8;
 #text-box p {
     padding: 0 5%;
 }
+
+@media screen and (max-width: 800px) {
+    p {
+        font-size: 90%;
+    }
+
+    #sample-images {
+        width: 100%;
+    }
+
+    #background-box, #about-box, #text-box {
+        width: 100%;
+    }
+}

@@ -53,11 +53,7 @@ a {
         font-size: 90%;
     }
 
-    #sample-images {
-        width: 100%;
-    }
-
-    #background-box, #about-box, #text-box {
-        width: 100%;
+    #social-box {
+        flex-direction: column;
     }
 }

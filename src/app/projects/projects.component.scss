@@ -102,9 +102,11 @@ $accent-color: #85E4F8;
 }
 
 .buttons a:hover {
-    background-color: #eee;
+    background-color: #ddd;
+    font-size: 1.2rem;
     box-shadow: 1px 1px 5px lightgray, -1px -1px 5px lightgray;
     opacity: .7;
+    transition: .2s font-size;
 }
 
 @media screen and (max-width: 800px) {

@@ -87,8 +87,11 @@ a {
         position: absolute;
         top: 60px;
         display: block;  
-        background-color: var(--primary-color);
+        background-color: $accent-color;
         opacity: .9;
         width: 40%;
+    }
+    li a {
+        color: $tertiary-color;
     }
 }
