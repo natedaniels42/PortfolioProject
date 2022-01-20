@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-projects',
+  selector: 'projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss']
 })
@@ -29,7 +29,7 @@ export class ProjectsComponent implements OnInit {
   } 
 
   increment($event: any) {
-    if (this.index < 3) {
+    if (this.index < 4) {
       this.index++;
       console.log(this.index);
     }
